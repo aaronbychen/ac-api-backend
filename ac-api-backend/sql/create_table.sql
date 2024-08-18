@@ -1,6 +1,4 @@
 # 数据库初始化
-# @author <a href="https://github.com/liac">程序员鱼皮</a>
-# @from <a href="https://ac.icu">编程导航知识星球</a>
 
 -- 创建库
 create database if not exists ac_api;
@@ -55,7 +53,7 @@ create table if not exists post_thumb
 ) comment '帖子点赞';
 
 -- 帖子收藏表（硬删除）
-create table if not exists post_favour
+create table if not exists post_favor
 (
     id         bigint auto_increment comment 'id' primary key,
     postId     bigint                             not null comment '帖子 id',
